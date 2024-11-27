@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html body {
+    height:100vh;
+    width: 100%;
+    background:linear-gradient(45deg  , #555, rgb(16, 38, 35))
+}
+.container{
+    min-height: 200px;
+    max-height: 1000px;
+    width: 500px;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    margin-top: 6rem;
+    margin-left: 34%;
+    position: relative;
+}
+.container h1 {
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 25px;
+}
+.input_container {
+    position: relative;
+    margin-top: 2rem;
+    width: 100%;
+}
+.input_container input {
+    width: 70%;
+    margin-left: 1rem;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.5s ease; 
+    background-color: rgba(232, 241, 240, 0.437);
+}
+.input_container input:focus {
+    border-bottom: 2px solid green;
+    box-shadow: 1px 1px 20px ;
+    transition: all 0.3s linear;
+}
+.input_container label {
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    color: #000;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    padding: 0.5px;
+}
+.input_container input:focus{
+    border-bottom: 2px solid green ;
+}
+.input_container input:focus + label,
+.input_container input:not(:placeholder-shown)+label{
+    top: -20px;
+    left: 20px;
+    font-size: 13px;
+    color: #fff;
+}
+.container #btn {
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: rgb(16, 165, 115);
+    padding: 13px 40px;
+    outline: none;
+    border: none;
+    margin-left: 0.5rem;
+}
+.container #btn:hover {
+    cursor: pointer;
+    background-color: rgba(16, 165, 115, 0.652);
+}
+.container ol {
+    margin-left: 1rem;
+}
+.list-item-class{
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 12px 17px;
+    margin: 10px;
+    margin-left: 1rem;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+.list-item-class::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(curcle.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: -28.5px;
+}
+ol li.chacked{
+    color: #ccc;
+    text-decoration: line-through #fff;
+}
+ol li.chacked::before {
+    background-image: url(chacked-green-bcg.jpeg);
+}
+
+.surcle-img-class{
+    position: relative;
+    top: 2px;
+    width: 25px;
+    height: 25px;
+}
+.span-class {
+    position: absolute;
+    right: 0;
+    top: 2.1px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.span-class:hover {
+    background: #edeef0;
+    background-color: rgb(253, 62, 94);
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s linear;
+}
